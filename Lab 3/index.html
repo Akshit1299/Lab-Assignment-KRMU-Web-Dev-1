@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshit Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-flex">
+            <h2 class="logo">My Portfolio </h2>
+
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <section id="hero" class="hero-section">
+        <div class="container hero-flex">
+            
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Akshit</span></h1>
+                <h3 class="animated-role">Full Stack Developer</h3>
+                <p>I am learning modern web development and building my portfolio step by step.</p>
+            </div>
+
+            <div class="hero-img">
+                <img src="4bb8b443-99a9-485c-af15-7a7a28ec1aa2.JPG" alt="Profile Photo">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                My name is Akshit Rajput. I am a beginner in web development and currently learning HTML,
+                CSS, and JavaScript. I like making simple and clean websites and want to grow as a full stack developer.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">HTML – Beginner</div>
+                <div class="skill-card">CSS – Beginner</div>
+                <div class="skill-card">JavaScript – Learning</div>
+                <div class="skill-card">Git/GitHub</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">Basic UI/UX</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A simple webpage using HTML and CSS.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Mini JavaScript activity based project.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Learning layout and styling improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+
+            <form class="contact-form" onsubmit="return sendMsg(event)">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+                <button type="button" id="topBtn">↑ Back to Top</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Akshit Rajput</p>
+    </footer>
+
+
+</body>
+</html>
