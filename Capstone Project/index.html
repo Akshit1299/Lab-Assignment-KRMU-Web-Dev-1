@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodie — Food Delivery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🍽️</div>
+        <a href="#" class="brand-name">La Fiesta</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#restaurants">Restaurants</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#download">App</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="#">Login</a>
+        <a class="btn btn-primary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Delicious food, delivered fast.</h1>
+          <p>Explore nearby restaurants, browse trending dishes, and get hot meals delivered to your door.</p>
+          <form class="hero-cta" role="search" aria-label="Search restaurants and food">
+            <input name="location" type="text" placeholder="Enter your delivery location" aria-label="Delivery location">
+            <select aria-label="Category">
+              <option value="">All categories</option>
+              <option>Pizza</option>
+              <option>Burgers</option>
+              <option>Sushi</option>
+              <option>Indian</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+
+          <div class="trust">
+            <span>⭐ 4.8 rated</span>
+            <span>•</span>
+            <span>Free delivery over ₹499</span>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8cGlV7ovr0KBHk5t-b-Jigm4V2HqSo7yQA&s" alt="Assortment of delicious dishes on table">
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section container">
+      <h2>Browse by category</h2>
+      <div class="categories-grid" role="list">
+        <article class="cat-card" role="listitem">
+          <img src="https://b.zmtcdn.com/data/pictures/chains/3/143/ce0341e58cf96f163101b4dff77ed938.jpg?fit=around|960:500&crop=960:500;*,*" alt="Pizza">
+          <span>Pizza</span>
+        </article>
+        <article class="cat-card" role="listitem">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI2FdiY1km0OdguHDQaSZIP_iHcM397h9elw&s" alt="Burgers">
+          <span>Burgers</span>
+        </article>
+        <article class="cat-card" role="listitem">
+          <img src="https://mrtsbakery.com.au/cdn/shop/articles/unnamed_b678cca6-c78e-46b0-97f8-50dbaea0d58e_800x.jpg?v=1574307298" alt="Sushi">
+          <span>Sushi</span>
+        </article>
+        <article class="cat-card" role="listitem">
+          <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/intro-1733153567.jpg" alt="Indian">
+          <span>Indian</span>
+        </article>
+        <article class="cat-card" role="listitem">
+          <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Desserts">
+          <span>Desserts</span>
+        </article>
+        <article class="cat-card" role="listitem">
+          <img src="https://www.beanilla.com/wp/wp-content/uploads/2022/06/RefreshingDrinks.jpg" alt="Drinks">
+          <span>Drinks</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="restaurants" class="section container">
+      <h2>Featured restaurants</h2>
+      <div class="restaurants-grid">
+        <article class="rest-card">
+          <img src="https://b.zmtcdn.com/data/pictures/9/19281329/87aff7e5f3464edb6c595f57c79bedba.jpg?fit=around|750:500&crop=750:500;*,*" alt="Restaurant 1">
+          <div class="card-body">
+            <h3>La Piazza</h3>
+            <p class="meta">Italian • 25-35 min • ₹300</p>
+            <div class="rating">⭐ 4.7</div>
+          </div>
+        </article>
+
+        <article class="rest-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNha2XL8ZVCKCNL79or5xabYeNZyrrdl8Rcg&s" alt="Restaurant 2">
+          <div class="card-body">
+            <h3>Urban Burgers</h3>
+            <p class="meta">Burgers • 20-30 min • ₹200</p>
+            <div class="rating">⭐ 4.6</div>
+          </div>
+        </article>
+
+        <article class="rest-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmUJu8GAhWGEyzat6eb0gC4Cj7zV00XuuvA&s" alt="Restaurant 3">
+          <div class="card-body">
+            <h3>Sakura Sushi</h3>
+            <p class="meta">Sushi • 30-40 min • ₹350</p>
+            <div class="rating">⭐ 4.8</div>
+          </div>
+        </article>
+
+        <article class="rest-card">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Restaurant 4">
+          <div class="card-body">
+            <h3>Spice Route</h3>
+            <p class="meta">Indian • 25-35 min • ₹250</p>
+            <div class="rating">⭐ 4.5</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="offers" class="section promo">
+      <div class="container promo-inner">
+        <div class="promo-text">
+          <h2>Special offers</h2>
+          <p>Up to 40% off selected restaurants. Use code <strong>FOODIE40</strong> at checkout.</p>
+        </div>
+        <div class="promo-cards">
+          <div class="offer-card">
+            <span class="offer-tag">50% OFF</span>
+            <p>First order discount</p>
+          </div>
+          <div class="offer-card">
+            <span class="offer-tag">FREE</span>
+            <p>Free dessert on orders above ₹599</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section container">
+      <h2>What customers say</h2>
+      <div class="test-grid">
+        <blockquote class="test-card">
+          <p>"Fast delivery and the food was still steaming. Love La Fiesta!"</p>
+          <cite>— Anaya</cite>
+        </blockquote>
+
+        <blockquote class="test-card">
+          <p>"Great offers and easy search — ordered in minutes."</p>
+          <cite>— Rohan</cite>
+        </blockquote>
+
+        <blockquote class="test-card">
+          <p>"Excellent restaurant selection and friendly delivery."</p>
+          <cite>— Priya</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="download" class="section app-download">
+      <div class="container app-inner">
+        <div class="app-left">
+          <h2>Get the La Fiesta app</h2>
+          <p>Order on the go — exclusive app-only deals, live order tracking, and saved favorites.</p>
+          <div class="store-links">
+            <a class="store-btn" href="#" aria-label="Download from Google Play">Google Play</a>
+            <a class="store-btn" href="#" aria-label="Download from App Store">App Store</a>
+          </div>
+        </div>
+        <div class="app-right" aria-hidden="true">
+          <img src="https://play-lh.googleusercontent.com/cE-pspIlpjDbBWnIegQPhOjpzcToRxXQwTfVEc0075JqeB5Pmi2yXVmHK2WnMq4JUQ" alt="Mobile app preview">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>La Fiesta </h3>
+        <p>Delicious food delivered to your door.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>© <span id="year"></span> La Fiesta. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
